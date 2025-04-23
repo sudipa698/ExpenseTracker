@@ -1,0 +1,47 @@
+<div>
+  <button class="general-button add-expense-button" (click)="toggleForm(formContent)">Add expenses</button>
+  <hot-table [hotId]="hotId" [settings]="settings" height="auto" licenseKey="non-commercial-and-evaluation"></hot-table>
+
+
+  <ng-template #formContent let-modal>
+    <div class="form-div">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Expense</h4>
+        <button type="button" class="close" (click)="modal.dismiss()">×</button>
+      </div>
+      <div class="modal-body">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit(); modal.close()">
+          <div>
+            <label for="cat">Category</label>
+            <input type="text" id="cat" name="cat" [(ngModel)]="expense.category">
+          </div>
+
+          <div>
+            <label for="subCat">Subcategory</label>
+            <input type="text" id="subCat" name="subCat" [(ngModel)]="expense.subcategory">
+          </div>
+
+          <div>
+            <label for="month">Month</label>
+            <input type="text" id="month" name="month" [(ngModel)]="expense.month">
+          </div>
+
+          <div>
+            <label for="actualCost">Actual Cost</label>
+            <input type="text" id="actualCost" name="actualCost" [(ngModel)]="expense.actualCost">
+          </div>
+
+          <div>
+            <label for="projectedCost">Projected Cost</label>
+            <input type="text" id="projectedCost" name="projectedCost" [(ngModel)]="expense.projectedCost">
+          </div>
+
+          <div class="button-div">
+            <button type="submit" class="general-button submit-button">Submit</button>
+            <button type="button" class="general-button cancel-button close" (click)="modal.dismiss()">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </ng-template>
+</div>

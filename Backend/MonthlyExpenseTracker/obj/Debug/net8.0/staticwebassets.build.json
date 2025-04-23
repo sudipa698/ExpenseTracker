@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6GhKXqTiXPuKxvuD9dn6MFyf+yN8GEIznrg+iYvKCwE=",
+  "Source": "MonthlyExpenseTracker",
+  "BasePath": "_content/MonthlyExpenseTracker",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

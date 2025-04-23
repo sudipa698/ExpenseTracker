@@ -1,0 +1,27 @@
+<!-- tab-container.component.html -->
+<div class="tabs-container">
+    <div class="tabs-header">
+      <div 
+        class="tab" 
+        [class.active]="activeTab === 'budgetOverview'" 
+        (click)="navigate('budgetOverview')">
+        Budget Overview
+      </div>
+      <div 
+        class="tab" 
+        [class.active]="activeTab === 'budgetSummary'" 
+        (click)="navigate('budgetSummary')">
+        Budget Summary
+      </div>
+      <div 
+        class="tab" 
+        [class.active]="activeTab === 'monthlyExpenses'" 
+        (click)="navigate('monthlyExpenses')">
+        Monthly Expenses
+      </div>
+    </div>
+    
+    <div class="tab-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>

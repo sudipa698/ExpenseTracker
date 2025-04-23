@@ -1,0 +1,22 @@
+<div>
+    <div style="display: flex; gap: 20px;">
+        <div style="width: 50%">
+            <p style="font-weight: 500;">Income Summary</p>
+            <hot-table [hotId]="hotId" [settings]="settings" height="auto" licenseKey="non-commercial-and-evaluation"
+                style="margin:auto">
+            </hot-table>
+        </div>
+
+        <div>
+            <p style="font-weight: 500;">Balance Summary</p>
+            <button class="calculate-balance-button" (click)="CalculateBalance()">Calculate Balance</button>
+            <div *ngIf="showBalanceButtonClicked === true" style="margin-top: 5px;">
+                Projected Balance: {{projectedBalance}}
+                <br>
+                Actual Balance: {{actualBalance}}
+            </div>
+
+        </div>
+    </div>
+    <svg id="gantt" style="min-height: 100%"></svg>
+</div>

@@ -1,0 +1,45 @@
+{
+  "name": "handsontable",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --disable-host-check",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/cdk": "^17.3.10",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/material": "^17.3.10",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "@handsontable/angular": "15.2",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "dhtmlx-gantt": "^9.0.7",
+    "frappe-gantt": "^1.0.3",
+    "handsontable": "15.2",
+    "hyperformula": "^3.0.0",
+    "numbro": "^2.4.0",
+    "rxjs": "^7.8.0",
+    "tslib": "^2.6.2",
+    "zone.js": "^0.14.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "@angular/localize": "latest",
+    "@angular/service-worker": "latest",
+    "@types/frappe-gantt": "^0.9.0",
+    "@types/node": "12.20.7",
+    "ts-node": "8.3.0",
+    "typescript": "5.4.2"
+  }
+}

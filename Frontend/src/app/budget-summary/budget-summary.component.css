@@ -1,0 +1,26 @@
+.parent-div {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+}
+
+.category-button {
+    color: white;
+    background: #07284b;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.active {
+    background-color: aquamarine;
+    color: black
+}

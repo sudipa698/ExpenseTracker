@@ -1,0 +1,10 @@
+.calculate-balance-button {
+    color: white;
+    background: #07284b;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
